@@ -1,0 +1,392 @@
+body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, li, a, p, h1, h2, h3, h4,h5, h6, i, b, textarea, button, input, select, figure, figcaption {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-style: normal;
+    text-decoration: none;
+    border: none;
+    font-family: "Microsoft Yahei",sans-serif;
+    -webkit-tap-highlight-color:transparent;
+    -webkit-font-smoothing: antialiased;
+}
+
+.boxFlexStart {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -moz-box-pack: start;
+    -webkit-justify-content: flex-start;
+    justify-content: start;
+}
+
+.boxFlexTopStart {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: start;
+    -moz-box-align: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    -webkit-box-pack: start;
+    -moz-box-pack: start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+}
+
+.boxFlexTopCen {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: start;
+    -moz-box-align: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.boxFlexTopEnd {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: start;
+    -moz-box-align: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    -webkit-box-pack: end;
+    -moz-box-pack: end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+}
+
+.boxFlexBottomStart {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: end;
+    -moz-box-align: end;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+    -webkit-box-pack: start;
+    -moz-box-pack: start;
+    -webkit-justify-content: flex-start;
+    justify-content: start;
+}
+
+.boxFlexBottomEnd {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: end;
+    -moz-box-align: end;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.boxFlexCen {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.boxFlexEnd {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -moz-box-pack: end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+}
+
+.boxFlex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-box;
+    display: -ms-flex;
+    display: flex;
+}
+
+.colFlex {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-box: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.txt_left{
+    text-align: left;
+}
+
+.txt_center{
+    text-align: center;
+}
+
+.txt_right{
+    text-align: right;
+}
+
+.word_wrap{
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.w_100w{
+    width: 100%;
+}
+
+.h_100w{
+    height: 100%;
+}
+
+/* 公共样式 */
+.mar_t10{
+    margin-top: 10px;
+}
+
+.pad_20_20{
+    padding: 20px 20px;
+}
+
+.pad_t10{
+    padding-top: 10px;
+}
+
+.pad_r20{
+    padding-right: 20px;
+}
+
+.pad_lr7{
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.pad_b10{
+    padding-bottom: 10px;
+}
+
+/* 图表样式 */
+.chart_wrap{
+    overflow: hidden;
+}
+
+.chart_wrap .total_type{
+    max-width: 200px;
+}
+
+.chart_wrap .title_name{
+    font-size: 13px;
+    color: #d88c1b;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.chart_wrap .numerical{
+    font-size: 18px;
+    font-weight: bolder;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.chart_wrap .sumNumerBor{
+    text-align: center;
+    padding: 10px 10px;
+    border: 1px solid #0968c2;
+}
+
+.chart_wrap .percentage{
+    font-size: 13px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+/* 图表详细部分 */
+.chart_wrap{
+    height: 100%;
+}
+
+.chart_wrap .chart_detailed{
+    height: 100%;
+    position: relative;
+}
+
+.chart_detailed_line_between{
+    width: 100%;
+    height: 0px;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+}
+
+
+.chart_wrap .chart_detailed::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #0968c2;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    /* transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%); */
+}
+
+.chart_wrap .chart_detailed::before{
+    display: block;
+    content: "";
+    width: 6px;
+    height: 8px;
+    background-image: url("../images/arrow_right_icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    right: -3px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+}
+
+/* 柱形图 */
+.chart_wrap .char_bar_item{
+    width: 100%;
+    max-width: 12%;
+    box-sizing: border-box;
+    position: absolute;
+}
+
+.chart_wrap .increase.char_bar_item{
+    bottom: 0px;
+}
+
+.chart_wrap .decline.char_bar_item{
+    top: 0px;
+}
+
+/* 柱形图蓝色带箭头边线 */
+.chart_wrap .increase.char_bar_item::before,
+.chart_wrap .decline.char_bar_item::before{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: #0968c2;
+    position: absolute;
+    left: 0px;
+}
+
+.chart_wrap .increase.char_bar_item::after,
+.chart_wrap .decline.char_bar_item::after{
+    content: "";
+    display: block;
+    width: 8px;
+    height: 6px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    left: -4px;
+}
+
+.chart_wrap .increase.char_bar_item::after{
+    background-image: url("../images/arrow_top_icon.png");
+    top: -3px;
+}
+
+.chart_wrap .decline.char_bar_item::after{
+    background-image: url("../images/arrow_bottom_icon.png");
+    bottom: -3px;
+}
+
+.chart_wrap .increase.char_bar_item::before{
+    bottom: 0px;
+}
+
+.chart_wrap .decline .char_bar_item::before{
+    top: 0px;
+}
+
+/* 增长 */
+.chart_wrap .increase .numerical,
+.chart_wrap .increase .percentage{
+    color: #f01515;
+}
+
+/* 下降 */
+.chart_wrap .decline .numerical,
+.chart_wrap .decline .percentage{
+    color: #057a32;
+}
+
+/* 增长和下降时的箭头图标 */
+.chart_wrap .increase .arrow_icon,
+.chart_wrap .decline .arrow_icon{
+    position: relative;
+    padding-left: 12px;
+}
+
+.chart_wrap .increase .arrow_icon::before,
+.chart_wrap .decline .arrow_icon::before{
+    content: "";
+    display: block;
+    width: 5px;
+    height: 11px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    left: 0px;
+}
+
+.chart_wrap .increase .arrow_icon::before{
+    background-image: url("../images/increase_arrow_icon.png");
+    bottom: 0px;
+}
+
+.chart_wrap .decline .arrow_icon::before{
+    background-image: url("../images/decline_arrow_icon.png");
+    top: 0px;
+}

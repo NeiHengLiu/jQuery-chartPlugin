@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>箭头图</title>
+    <link rel="stylesheet" href="css/arrowChart.css">
+</head>
+<body>
+
+    <button class="btn" data-index="">混合数据</button>&nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="btn" data-index="2">全增长数据</button>&nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="btn" data-index="3">全下降数据</button>&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    <!--S 箭头图表插件-->
+    <div class="show_chart" style="height:600px;margin-top:100px;"></div>
+    <!--E 箭头图表插件-->
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/arrowChart.js"></script>
+    <script>
+        $(function(){
+
+            $('.btn').on('click', function(){
+                var index = $(this).data('index');
+                getData(index);
+            });
+
+            /* 请求数据 */
+            getData();
+            function getData(index){
+                index = index || '';
+                $.get('json/data'+index+'.json', function(data){
+                    $('.show_chart').arrowChart({
+                        data: data,
+                        arrowHeight: 50,    // 配置每个箭头图的高度
+                        verticalAlign: true,
+                        clickCallBack: function(obj){    // 点击回调
+                            console.log(obj.find('.title_name').text());
+                        }
+                    });
+                });
+            }
+
+        });
+    </script>
+</body>
+</html>
